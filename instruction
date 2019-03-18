@@ -15,8 +15,8 @@ catkin init
 cd src/
 git clone https://github.com/AMZ-Driverless/fssim.git
 cd fssim/
-sudo rosdep init
-sudo rosdep update
+//sudo rosdep init
+//sudo rosdep update
 ./update_dependencies.sh
 
 catkin build
