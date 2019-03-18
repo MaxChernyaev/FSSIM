@@ -20,6 +20,7 @@ cd fssim/
 ./update_dependencies.sh
 source /opt/ros/kinetic/setup.bash
 catkin build
+cd ../..
 source devel/setup.bash
 
 4) -- Вторая рабочая область: --
@@ -27,6 +28,7 @@ cd ~
 git clone https://github.com/AMZ-Driverless/fsd_skeleton.git
 cd ~/fsd_skeleton
 sudo apt install checkinstall
+
 ./update_dependencies.sh
 catkin build
 source fsd_environment.sh
