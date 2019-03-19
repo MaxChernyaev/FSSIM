@@ -28,9 +28,9 @@ cd ~
 git clone https://github.com/AMZ-Driverless/fsd_skeleton.git
 cd ~/fsd_skeleton
 sudo apt install checkinstall
-
 ./update_dependencies.sh
 catkin build
+cp ~/catkin_ws/src/fssim ~/fsd_skeleton/src/
 source fsd_environment.sh
 FSD_ATS
 roslaunch fssim_interface rviz.launch
